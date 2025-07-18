@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - Abhiranjan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      margin: 50px 0 30px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+    .footer {
+      background: #222;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    .resume-buttons a {
+      margin: 5px;
+    }
+    @media (max-width: 576px) {
+      .profile-pic {
+        width: 110px;
+        height: 110px;
+      }
+      .hero h1 {
+        font-size: 26px;
+      }
+      .hero p {
+        font-size: 14px;
+      }
+    }
+    .text-center {
+      width: 70%;
+      margin: 0 auto;
+      text-indent: 0;
+      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      white-space: normal;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Abhiranjan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#domain">Domain Knowledge</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <img src="C:\Users\abhir\OneDrive\Desktop\Passport Photo.jpg" alt="Profile" class="profile-pic" />
+  <h1>Hi, I'm Abhiranjan</h1>
+  <p class="lead">Manual Tester | QA Engineer | BCA Graduate</p>
+  <div class="resume-buttons">
+    <a href="file:///C:/Users/abhir/Downloads/Abhiranjan_QA.pdf" download class="btn btn-light btn-sm">Download Resume</a>
+    <a href="file:///C:/Users/abhir/Downloads/Abhiranjan_QA.pdf" target="_blank" class="btn btn-outline-light btn-sm">View Resume</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+  <h2 class="section-title">About Me</h2>
+  <p class="text-center">
+    I am a dedicated and detail-oriented <b>QA Engineer</b> with 2.6 years of hands-on experience in manual testing.
+    I hold a Bachelor’s degree in Computer Applications (BCA) and a professional certification in manual testing
+    from QSpiders, Noida. My experience includes test case creation, test planning, execution, defect reporting,
+    and participation in sprint activities like planning and release. I’ve worked closely with development teams to
+    ensure the delivery of high-quality software and maintain thorough documentation throughout the testing lifecycle.
+    I am passionate about delivering bug-free products and continuously improving testing processes.
+  </p>
+  <!-- Skills Section -->
+<section id="skills" class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Skills</h2>
+    <div class="row g-4">
+      <!-- Manual Testing -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body text-center">
+            <i class="bi bi-clipboard-check text-primary" style="font-size: 2rem;"></i>
+            <h5 class="card-title mt-3 fw-semibold">Manual Testing</h5>
+            <ul class="text-start list-unstyled mt-3" style="font-size: 14px; line-height: 1.6;">
+              <li>• Test case design</li>
+              <li>• Test case execution</li>
+              <li>• Bug reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body text-center">
+            <i class="bi bi-tools text-success" style="font-size: 2rem;"></i>
+            <h5 class="card-title mt-3 fw-semibold">Tools</h5>
+            <ul class="text-start list-unstyled mt-3" style="font-size: 14px; line-height: 1.6;">
+              <li>• JIRA</li>
+              <li>• Postman</li>
+              <li>• Selenium</li>
+              <li>• Workbench</li>
+              <li>• PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body text-center">
+            <i class="bi bi-code-slash text-danger" style="font-size: 2rem;"></i>
+            <h5 class="card-title mt-3 fw-semibold">Languages</h5>
+            <ul class="text-start list-unstyled mt-3" style="font-size: 14px; line-height: 1.6;">
+              <li>• HTML</li>
+              <li>• CSS</li>
+              <li>• JavaScript</li>
+              <li>• Java (Basics)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body text-center">
+            <i class="bi bi-person-hearts text-warning" style="font-size: 2rem;"></i>
+            <h5 class="card-title mt-3 fw-semibold">Soft Skills</h5>
+            <ul class="text-start list-unstyled mt-3" style="font-size: 14px; line-height: 1.6;">
+              <li>• Communication</li>
+              <li>• Problem Solving</li>
+              <li>• Teamwork</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <div class="card-body text-center">
+            <i class="bi bi-lightbulb text-info" style="font-size: 2rem;"></i>
+            <h5 class="card-title mt-3 fw-semibold">Others</h5>
+            <ul class="text-start list-unstyled mt-3" style="font-size: 14px; line-height: 1.6;">
+              <li>• Agile Methodology</li>
+              <li>• API Testing</li>
+              <li>• Test Documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Domain Knowledge Section -->
+<section id="domain" class="container py-5">
+  <h2 class="section-title">Domain Knowledge</h2>
+  <div class="row g-4">
+    <!-- Banking -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm border-0 p-3">
+        <div class="card-body text-start">
+          <div class="text-center mb-3 text-primary">
+            <i class="bi bi-bank2" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="card-title text-center fw-semibold">Banking & Finance</h5>
+          <p class="card-text text-muted" style="line-height: 1.6; font-size: 15px;">
+            Worked on digital banking apps covering Credit Cards, Bill Cycle, EMI Conversion,
+            Balance Transfer, and Loan services. Ensured secure and reliable mobile experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- e-Procurement -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm border-0 p-3">
+        <div class="card-body text-start">
+          <div class="text-center mb-3 text-success">
+            <i class="bi bi-currency-exchange" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="card-title text-center fw-semibold">e-Procurement</h5>
+          <p class="card-text text-muted" style="line-height: 1.6; font-size: 15px;">
+            Tested auction platforms like Procfox & SMRA. Involved in end-to-end testing of national & international tendering and bidding processes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- E-Commerce -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm border-0 p-3">
+        <div class="card-body text-start">
+          <div class="text-center mb-3 text-danger">
+            <i class="bi bi-cart4" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="card-title text-center fw-semibold">E-Commerce</h5>
+          <p class="card-text text-muted" style="line-height: 1.6; font-size: 15px;">
+            Experienced in shopping workflows: user registration, product filtering, cart flow, payments, and return processes. Focused on UX and responsiveness.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gaming -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm border-0 p-3">
+        <div class="card-body text-start">
+          <div class="text-center mb-3 text-warning">
+            <i class="bi bi-controller" style="font-size: 2rem;"></i>
+          </div>
+          <h5 class="card-title text-center fw-semibold">Gaming</h5>
+          <p class="card-text text-muted" style="line-height: 1.6; font-size: 15px;">
+            Validated game flows including login, matchmaking, leaderboard, and purchases.
+            Performed compatibility testing across multiple devices and ensured smooth gameplay.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="container py-5">
+  <h2 class="section-title">Projects</h2>
+  <div class="row g-4">
+   <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title"> Kotak Mobile Banking App (May 2025 - July 2025)</h5>
+          <p class="card-text">
+  Kotak Mobile Banking App is a digital banking platform that provides a range of banking
+ services such as account management, fund transfers, bill payments, investment tracking,
+ and credit card management. The app supports Android and iOS platforms and aims to
+ deliver a secure and seamless banking experience to its customers.
+ I was part of the Credit Card Module testing team, which focused on ensuring end-to-end
+ functionality, accuracy, and reliability of all credit card-related features available in the
+ mobile app.<br><br>
+ 
+ <b>Roles & Responsibilities</b>
+ 
+ <p>Functional Testing, Test Case Creation,Test Case Execution, Defect Reporting, Defect
+ Tracking, Release Notes, Regression Testing, Sanity Testing, Mobile Testing(IOS/Android),
+ Testing, UAT Testing, Re-Testing, Production/live Testing, Collborate with Developers, Data
+ Creation, Documents Creation and Figma.
+ </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Procfox Smart sourcing (Mar 2023 - APR  2025)</h5>
+          <p class="card-text"> Procfox Smart Sourcing 
+ Procfox Smart Sourcing is an in-house product developed by C1 India Pvt. Limited. This
+ subscription-based platform is designed for auctions and TMS (Tender Management
+ Systems). It provides a wide range of auction types and a variety of additional features,
+ distinguishing it from other e-procurement solutions.<br></p>
+ 
+ <b> Roles & Responsibilities </b>
+ 
+ <p>
+ Functional Testing, Test Case Creation,Test Case Execution, Defect Reporting, Defect
+ Tracking, Release Notes, Regression Testing, Sanity Testing, Mobile Testing, Cross Browser
+ Testing, UAT Testing, Re-Testing and Production/live Testing.
+ Successfully executed over 600 national and international auctions seamlessly, enhancing
+ the application's usability by approximately 85–90%.
+ Reduced application issues by 80-85% and addressed security concerns.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">SMRA (Mar 2023 - APR 2025)</h5>
+          <p class="card-text">
+ SMRA is an e-procurement platform used by the Ministry of Broadcasting to conduct
+ auctions. Through this platform, the Ministry auctions radio frequencies for a limited tenure.
+ </p><br>
+ 
+ <b>Roles & Responsibilities</b>
+ <p>
+ Functional Testing, Test Case Creation,Test Case Execution, Defect Reporting, Defect
+ Tracking, Release Notes, Regression Testing, Sanity Testing, Mobile Testing, Cross Browser
+ Testing, UAT Testing, Re-Testing and Production/live Testing.
+ Successfully conducted over 10 auctions without any interruptions, making the application
+ 85-90% more feasible to use.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="text-center">
+      <strong>Email:</strong> <a href="mailto:abhiranjanchaudhary1289@gmail.com">abhiranjanchaudhary1289@gmail.com</a><br>
+      <strong>Phone:</strong> +91-7303318897
+    </p>
+
+    <form id="contactForm" action="https://formspree.io/f/mldnzqzd" method="POST" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" name="_replyto" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea name="message" class="form-control" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark w-100">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 Abhiranjan. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SweetAlert Script -->
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent!',
+          text: 'Thank you for reaching out!',
+          confirmButtonColor: '#3085d6'
+        });
+        form.reset();
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong. Please try again!',
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Network Error',
+        text: 'Please check your internet connection.',
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
